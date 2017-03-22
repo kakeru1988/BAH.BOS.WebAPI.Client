@@ -41,7 +41,7 @@ namespace BAH.BOS.WebAPI.Client.DynamicFormOperation
                         StartRow = this.PageIndex,
                         FilterString = this.Filter,
                         OrderString = this.OrderBy,
-                        FieldKeys = string.Join(",", this.FieldKeys)
+                        FieldKeys = string.Join(",", this.FieldKeys.ToArray())
                     }
                 };
 

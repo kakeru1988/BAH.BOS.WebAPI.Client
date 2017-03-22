@@ -50,7 +50,7 @@
     <Reference Include="mscorlib" />
     <Reference Include="Newtonsoft.Json.Compact, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Partner\Json.NET\35r8\Bin\Compact\Newtonsoft.Json.Compact.dll</HintPath>
+      <HintPath>..\Json.NET\35r8\Compact\Newtonsoft.Json.Compact.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -81,11 +81,77 @@
     <Compile Include="..\..\BAH.BOS.WebAPI.Client\Asynchronous\ClientHttpTask.cs">
       <Link>Asynchronous\ClientHttpTask.cs</Link>
     </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthOperationResult\ClientType.cs">
+      <Link>AuthOperationResult\ClientType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthOperationResult\Context.cs">
+      <Link>AuthOperationResult\Context.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthOperationResult\DatabaseType.cs">
+      <Link>AuthOperationResult\DatabaseType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthOperationResult\KDOAuthInfo.cs">
+      <Link>AuthOperationResult\KDOAuthInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthOperationResult\LanguageInfo.cs">
+      <Link>AuthOperationResult\LanguageInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthOperationResult\LoginResult.cs">
+      <Link>AuthOperationResult\LoginResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthOperationResult\LoginResultType.cs">
+      <Link>AuthOperationResult\LoginResultType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthOperationResult\OrganizationInfo.cs">
+      <Link>AuthOperationResult\OrganizationInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthOperationResult\RedirectFormParam.cs">
+      <Link>AuthOperationResult\RedirectFormParam.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthServiceOperation\LoginByAppSecret.cs">
+      <Link>AuthServiceOperation\LoginByAppSecret.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthServiceOperation\LoginByAppSign.cs">
+      <Link>AuthServiceOperation\LoginByAppSign.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthServiceOperation\LoginByUserPassword.cs">
+      <Link>AuthServiceOperation\LoginByUserPassword.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthServiceOperation\Logout.cs">
+      <Link>AuthServiceOperation\Logout.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\AuthServiceOperation\LookContext.cs">
+      <Link>AuthServiceOperation\LookContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\BusinessOperationResult\MCService\GetDataCenterListResult.cs">
+      <Link>BusinessOperationResult\MCService\GetDataCenterListResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\BusinessOperationResult\ResultCode.cs">
+      <Link>BusinessOperationResult\ResultCode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\BusinessOperationResult\ServiceResult.cs">
+      <Link>BusinessOperationResult\ServiceResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\BusinessOperationResult\SessionService\AliveResult.cs">
+      <Link>BusinessOperationResult\SessionService\AliveResult.cs</Link>
+    </Compile>
     <Compile Include="..\..\BAH.BOS.WebAPI.Client\BusinessServiceOperation\ExecuteServiceOperation.cs">
       <Link>BusinessServiceOperation\ExecuteServiceOperation.cs</Link>
     </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\BusinessServiceOperation\MCService.cs">
+      <Link>BusinessServiceOperation\MCService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\BusinessServiceOperation\SessionService.cs">
+      <Link>BusinessServiceOperation\SessionService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\BusinessServiceOperation\UserService.cs">
+      <Link>BusinessServiceOperation\UserService.cs</Link>
+    </Compile>
     <Compile Include="..\..\BAH.BOS.WebAPI.Client\DynamicFormOperation\Audit.cs">
       <Link>DynamicFormOperation\Audit.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\DynamicFormOperation\BatchSave.cs">
+      <Link>DynamicFormOperation\BatchSave.cs</Link>
     </Compile>
     <Compile Include="..\..\BAH.BOS.WebAPI.Client\DynamicFormOperation\BDEnable.cs">
       <Link>DynamicFormOperation\BDEnable.cs</Link>
@@ -99,11 +165,17 @@
     <Compile Include="..\..\BAH.BOS.WebAPI.Client\DynamicFormOperation\Delete.cs">
       <Link>DynamicFormOperation\Delete.cs</Link>
     </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\DynamicFormOperation\Draft.cs">
+      <Link>DynamicFormOperation\Draft.cs</Link>
+    </Compile>
     <Compile Include="..\..\BAH.BOS.WebAPI.Client\DynamicFormOperation\ExecuteFormOperation.cs">
       <Link>DynamicFormOperation\ExecuteFormOperation.cs</Link>
     </Compile>
     <Compile Include="..\..\BAH.BOS.WebAPI.Client\DynamicFormOperation\FormOperation.cs">
       <Link>DynamicFormOperation\FormOperation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\DynamicFormOperation\Query.cs">
+      <Link>DynamicFormOperation\Query.cs</Link>
     </Compile>
     <Compile Include="..\..\BAH.BOS.WebAPI.Client\DynamicFormOperation\Save.cs">
       <Link>DynamicFormOperation\Save.cs</Link>
@@ -120,59 +192,29 @@
     <Compile Include="..\..\BAH.BOS.WebAPI.Client\DynamicFormOperation\UnAudit.cs">
       <Link>DynamicFormOperation\UnAudit.cs</Link>
     </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\DynamicFormOperation\ValidateUser.cs">
-      <Link>DynamicFormOperation\ValidateUser.cs</Link>
-    </Compile>
     <Compile Include="..\..\BAH.BOS.WebAPI.Client\DynamicFormOperation\View.cs">
       <Link>DynamicFormOperation\View.cs</Link>
     </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\FormOperation\ResponseError.cs">
-      <Link>FormOperationResult\FormOperation\ResponseError.cs</Link>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\FormResult.cs">
+      <Link>FormOperationResult\FormResult.cs</Link>
     </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\FormOperation\ResponseResult.cs">
-      <Link>FormOperationResult\FormOperation\ResponseResult.cs</Link>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\FormStatus.cs">
+      <Link>FormOperationResult\FormStatus.cs</Link>
     </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\FormOperation\ResponseStatus.cs">
-      <Link>FormOperationResult\FormOperation\ResponseStatus.cs</Link>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\ResultConverter.cs">
+      <Link>FormOperationResult\ResultConverter.cs</Link>
     </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\FormOperation\ResultConvert.cs">
-      <Link>FormOperationResult\FormOperation\ResultConvert.cs</Link>
-    </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\Save\SaveResponseResult.cs">
-      <Link>FormOperationResult\Save\SaveResponseResult.cs</Link>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\Save\SaveFormResult.cs">
+      <Link>FormOperationResult\Save\SaveFormResult.cs</Link>
     </Compile>
     <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\Save\SaveResult.cs">
       <Link>FormOperationResult\Save\SaveResult.cs</Link>
     </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\ValidateUser\ClientType.cs">
-      <Link>FormOperationResult\ValidateUser\ClientType.cs</Link>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\ValidationError.cs">
+      <Link>FormOperationResult\ValidationError.cs</Link>
     </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\ValidateUser\Context.cs">
-      <Link>FormOperationResult\ValidateUser\Context.cs</Link>
-    </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\ValidateUser\DatabaseType.cs">
-      <Link>FormOperationResult\ValidateUser\DatabaseType.cs</Link>
-    </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\ValidateUser\KDOAuthInfo.cs">
-      <Link>FormOperationResult\ValidateUser\KDOAuthInfo.cs</Link>
-    </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\ValidateUser\LanguageInfo.cs">
-      <Link>FormOperationResult\ValidateUser\LanguageInfo.cs</Link>
-    </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\ValidateUser\LoginResultType.cs">
-      <Link>FormOperationResult\ValidateUser\LoginResultType.cs</Link>
-    </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\ValidateUser\OrganizationInfo.cs">
-      <Link>FormOperationResult\ValidateUser\OrganizationInfo.cs</Link>
-    </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\ValidateUser\RedirectFormParam.cs">
-      <Link>FormOperationResult\ValidateUser\RedirectFormParam.cs</Link>
-    </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\ValidateUser\ValidateUserResult.cs">
-      <Link>FormOperationResult\ValidateUser\ValidateUserResult.cs</Link>
-    </Compile>
-    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\View\ViewResponseResult.cs">
-      <Link>FormOperationResult\View\ViewResponseResult.cs</Link>
+    <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\View\ViewFormResult.cs">
+      <Link>FormOperationResult\View\ViewFormResult.cs</Link>
     </Compile>
     <Compile Include="..\..\BAH.BOS.WebAPI.Client\FormOperationResult\View\ViewResult.cs">
       <Link>FormOperationResult\View\ViewResult.cs</Link>

@@ -5,6 +5,7 @@ using System.Text;
 using System.Net;
 using System.IO;
 using BAH.BOS.WebAPI.Client.DynamicFormOperation;
+using BAH.BOS.WebAPI.Client.AuthServiceOperation;
 
 namespace BAH.BOS.WebAPI.Client
 {
@@ -140,7 +141,7 @@ namespace BAH.BOS.WebAPI.Client
         public void GetCookie(HttpWebRequest request)
         {
             //执行其他操作（非验证用户）时，读取本地Cookie
-            if (!string.Equals(this._request.Operation.ServiceName, new ValidateUser().ServiceName,
+            if (!string.Equals(this._request.Operation.ServiceName, new LoginByUserPassword().ServiceName,
                 StringComparison.OrdinalIgnoreCase))
             {
                 var cookie = CookieManager.Get(this._request.Operation.RootUrl);
@@ -155,7 +156,7 @@ namespace BAH.BOS.WebAPI.Client
         public void SaveCookie(HttpWebResponse response)
         {
             //执行验证用户时，获取并保存Cookie
-            if (string.Equals(this._request.Operation.ServiceName, new ValidateUser().ServiceName,
+            if (string.Equals(this._request.Operation.ServiceName, new LoginByUserPassword().ServiceName,
                 StringComparison.OrdinalIgnoreCase))
             {
                 var cookie = SplitCookie(response);
